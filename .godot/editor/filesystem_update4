@@ -1,0 +1,5 @@
+res://ui_screens/title_screen.tscn
+res://theme/main.tres
+res://Levels/base_level.tscn
+res://Levels/level.gd
+res://ui_screens/title_screen.gd

@@ -1,0 +1,32 @@
+[gd_scene load_steps=2 format=3 uid="uid://cthvnosfu6lmo"]
+
+[ext_resource type="Script" path="res://ui_screens/end_screen.gd" id="1_47j7m"]
+
+[node name="EndScreen" type="CanvasLayer"]
+script = ExtResource("1_47j7m")
+
+[node name="BG" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.0846899, 0.0846899, 0.0846899, 1)
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -199.0
+offset_right = 199.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="CenterContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 75
+text = "Thanks  For  playing !
+
+Be  sure  to  give  feedback  about  your  experience "
+horizontal_alignment = 1
+vertical_alignment = 1

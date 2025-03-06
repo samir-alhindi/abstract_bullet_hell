@@ -1,0 +1,14 @@
+Button
+Label
+CanvasLayer
+VBoxContainer
+ColorRect
+AudioStreamPlayer
+AnimationPlayer
+CenterContainer
+CollisionShape2D
+Area2D
+CharacterBody2D
+Timer
+AnimationTree
+AudioStreamPlayer3D

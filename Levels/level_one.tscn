@@ -1,0 +1,14 @@
+[gd_scene load_steps=5 format=3 uid="uid://b88jiv1oxbim5"]
+
+[ext_resource type="PackedScene" uid="uid://5aohpy4q2odu" path="res://Levels/base_level.tscn" id="1_khskb"]
+[ext_resource type="PackedScene" uid="uid://c5mesiiphe7ex" path="res://bosses/boss_one.tscn" id="2_7icsw"]
+[ext_resource type="PackedScene" uid="uid://qdkpf1kaj3ag" path="res://Levels/level_two.tscn" id="2_dfkiy"]
+[ext_resource type="AudioStream" uid="uid://cr8w0yq5umm7p" path="res://songs/glitch.ogg" id="3_kdknk"]
+
+[node name="LevelOne" instance=ExtResource("1_khskb")]
+next_level = ExtResource("2_dfkiy")
+song = ExtResource("3_kdknk")
+
+[node name="BossOne" parent="." index="4" instance=ExtResource("2_7icsw")]
+position = Vector2(940, 224)
+hp = 500

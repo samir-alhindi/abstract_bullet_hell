@@ -1,0 +1,138 @@
+[gd_scene load_steps=7 format=3 uid="uid://da6urw7qoqiey"]
+
+[ext_resource type="PackedScene" uid="uid://xmpwthpwxqwk" path="res://bosses/base_boss.tscn" id="1_tn25c"]
+[ext_resource type="Script" path="res://bosses/boss_two.gd" id="2_ab1mc"]
+[ext_resource type="PackedScene" uid="uid://by0r1gmvtkfc2" path="res://bosses/enemy_shooter.tscn" id="3_boot4"]
+
+[sub_resource type="Animation" id="Animation_lve44"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_vcdfy"]
+resource_name = "hurt"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0.52549), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_rjo32"]
+_data = {
+"RESET": SubResource("Animation_lve44"),
+"hurt": SubResource("Animation_vcdfy")
+}
+
+[node name="BossTwo" instance=ExtResource("1_tn25c")]
+script = ExtResource("2_ab1mc")
+hp = 500
+
+[node name="CollisionShape2D" parent="." index="1"]
+visible = true
+
+[node name="Shooter1" parent="Shooters" index="0" instance=ExtResource("3_boot4")]
+shoot_time = 0.6
+shooting_point_offset = 0
+
+[node name="Shooter2" parent="Shooters" index="1" instance=ExtResource("3_boot4")]
+rotation = 1.5708
+shoot_time = 0.6
+shooting_point_offset = 0
+
+[node name="Shooter3" parent="Shooters" index="2" instance=ExtResource("3_boot4")]
+rotation = 3.14159
+shoot_time = 0.6
+shooting_point_offset = 0
+
+[node name="Shooter4" parent="Shooters" index="3" instance=ExtResource("3_boot4")]
+rotation = 4.71239
+shoot_time = 0.6
+shooting_point_offset = 0
+
+[node name="Shooter5" parent="Shooters" index="4" instance=ExtResource("3_boot4")]
+rotation = 0.785398
+shoot_time = 0.6
+shooting_point_offset = 0
+
+[node name="Shooter6" parent="Shooters" index="5" instance=ExtResource("3_boot4")]
+rotation = 2.35619
+shoot_time = 0.6
+shooting_point_offset = 0
+
+[node name="Shooter7" parent="Shooters" index="6" instance=ExtResource("3_boot4")]
+rotation = 3.92699
+shoot_time = 0.6
+shooting_point_offset = 0
+
+[node name="Shooter8" parent="Shooters" index="7" instance=ExtResource("3_boot4")]
+rotation = 5.49779
+shoot_time = 0.6
+shooting_point_offset = 0
+
+[node name="Shooter9" parent="Shooters" index="8" instance=ExtResource("3_boot4")]
+rotation = -0.393756
+shoot_time = 0.6
+shooting_point_offset = 0
+
+[node name="Shooter10" parent="Shooters" index="9" instance=ExtResource("3_boot4")]
+rotation = 1.17704
+shoot_time = 0.6
+shooting_point_offset = 0
+
+[node name="Shooter11" parent="Shooters" index="10" instance=ExtResource("3_boot4")]
+rotation = 2.74784
+shoot_time = 0.6
+shooting_point_offset = 0
+
+[node name="Shooter12" parent="Shooters" index="11" instance=ExtResource("3_boot4")]
+rotation = 4.31863
+shoot_time = 0.6
+shooting_point_offset = 0
+
+[node name="Shooter13" parent="Shooters" index="12" instance=ExtResource("3_boot4")]
+rotation = 0.391642
+shoot_time = 0.6
+shooting_point_offset = 0
+
+[node name="Shooter14" parent="Shooters" index="13" instance=ExtResource("3_boot4")]
+rotation = 1.96244
+shoot_time = 0.6
+shooting_point_offset = 0
+
+[node name="Shooter15" parent="Shooters" index="14" instance=ExtResource("3_boot4")]
+rotation = 3.53323
+shoot_time = 0.6
+shooting_point_offset = 0
+
+[node name="Shooter16" parent="Shooters" index="15" instance=ExtResource("3_boot4")]
+rotation = 5.10403
+shoot_time = 0.6
+shooting_point_offset = 0
+
+[node name="AnimationPlayer" parent="." index="5"]
+libraries = {
+"": SubResource("AnimationLibrary_rjo32")
+}
+
+[node name="RotationTimer" type="Timer" parent="." index="6"]
+wait_time = 3.0
+autostart = true
+
+[connection signal="timeout" from="RotationTimer" to="." method="_on_rotation_timer_timeout"]

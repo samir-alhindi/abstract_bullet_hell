@@ -1,0 +1,105 @@
+[gd_scene load_steps=3 format=3 uid="uid://bn0jv6rimentm"]
+
+[ext_resource type="Script" path="res://ui_screens/title_screen.gd" id="1_372d1"]
+[ext_resource type="Theme" uid="uid://c8kob3vhkjd1o" path="res://theme/main.tres" id="2_7w6jl"]
+
+[node name="TitleScreen" type="CanvasLayer"]
+script = ExtResource("1_372d1")
+
+[node name="BG" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.0846899, 0.0846899, 0.0846899, 1)
+
+[node name="MainButtonsContainer" type="VBoxContainer" parent="."]
+anchors_preset = -1
+anchor_left = 0.258
+anchor_top = 0.123
+anchor_right = 0.742
+anchor_bottom = 1.0
+offset_left = 0.639954
+offset_top = 0.160004
+offset_right = 0.359863
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 50
+
+[node name="Title" type="Label" parent="MainButtonsContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+text = "Abstract  Bullet  Hell"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="StartGameButton" type="Button" parent="MainButtonsContainer"]
+layout_mode = 2
+theme = ExtResource("2_7w6jl")
+theme_override_colors/icon_normal_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_focus_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 85
+text = "Start"
+
+[node name="BossSelectButton" type="Button" parent="MainButtonsContainer"]
+layout_mode = 2
+theme = ExtResource("2_7w6jl")
+theme_override_colors/icon_normal_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_focus_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 85
+text = "Boss  Select"
+
+[node name="QuitButton" type="Button" parent="MainButtonsContainer"]
+layout_mode = 2
+theme = ExtResource("2_7w6jl")
+theme_override_colors/icon_normal_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_focus_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 85
+text = "Quit"
+
+[node name="BossSelectContainer" type="VBoxContainer" parent="."]
+visible = false
+anchors_preset = -1
+anchor_left = 0.258
+anchor_top = 0.146
+anchor_right = 0.742
+anchor_bottom = 1.0
+offset_left = 0.639954
+offset_top = 0.319992
+offset_right = 0.359863
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 30
+
+[node name="BossOneButton" type="Button" parent="BossSelectContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+text = "1st"
+
+[node name="BossTwoButton" type="Button" parent="BossSelectContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+text = "2nd"
+
+[node name="CreatorLabel" type="Label" parent="."]
+anchors_preset = -1
+anchor_left = 0.005
+anchor_top = 0.871
+anchor_right = 0.449
+anchor_bottom = 1.0
+offset_left = -2.6
+offset_top = 0.319946
+offset_right = -0.0800781
+offset_bottom = -3.0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 70
+text = "A game by Samir-Alhindi"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="MainButtonsContainer/StartGameButton" to="." method="_on_start_game_button_pressed"]
+[connection signal="pressed" from="MainButtonsContainer/BossSelectButton" to="." method="_on_boss_select_button_pressed"]
+[connection signal="pressed" from="MainButtonsContainer/QuitButton" to="." method="_on_quit_button_pressed"]
+[connection signal="pressed" from="BossSelectContainer/BossOneButton" to="." method="_on_boss_one_button_pressed"]
+[connection signal="pressed" from="BossSelectContainer/BossTwoButton" to="." method="_on_boss_two_button_pressed"]

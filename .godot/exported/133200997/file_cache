@@ -1,0 +1,15 @@
+res://bullet/bullet.tscn::51b507c633dde977b0d511a561b80fcd::1739517205::res://.godot/exported/133200997/export-b76706a2aa0e739961a1ea57e3b62984-bullet.scn
+res://player/player.tscn::ac15f25ca40e1411ce83fb7f95d1d74c::1739800136::res://.godot/exported/133200997/export-753d15e03e0182f9d550ac833b42bb41-player.scn
+res://autoloads/transition.tscn::61c8eff3b6f156c1bc89b66f0fa33270::1739954899::res://.godot/exported/133200997/export-f4d94e4095f44ff52bc96ad24e0d3285-transition.scn
+res://bosses/base_boss.tscn::a7ff6558eea3ab304c8bd1e22738cdf3::1739953332::res://.godot/exported/133200997/export-35879b7ea9940a3a644c335bcd8a1015-base_boss.scn
+res://bosses/boss_one.tscn::92399e49e2789fdcb3eca06a6b4220a8::1739634186::res://.godot/exported/133200997/export-33394be2d613e01d60fd7252a7f7b068-boss_one.scn
+res://bosses/boss_two.tscn::737cec0865af966b5706df860d8dc62f::1739953617::res://.godot/exported/133200997/export-4afd0e17739ec215f82ba40d46260e58-boss_two.scn
+res://bosses/enemy_shooter.tscn::4e4f8dadaefde0a001d0f0594d7e258f::1739338365::res://.godot/exported/133200997/export-106c1e3a406d8d01212d505a6ccbd847-enemy_shooter.scn
+res://cpu_particles/dead_explosion.tscn::84b1677c2c98a1bbce0f6602988747c1::1739802762::res://.godot/exported/133200997/export-a221d9f41e3d7a7e6aadbc201d41fc61-dead_explosion.scn
+res://Levels/base_level.tscn::7fb3e72bfcdf1d36f3b8ee53395cb935::1740994518::res://.godot/exported/133200997/export-7a4f65ef5c4d2f999e3090e36df0864c-base_level.scn
+res://Levels/level_one.tscn::668b0f26d6de2358b74d9ab67609cee4::1739800329::res://.godot/exported/133200997/export-d4e00838489b037587c6e283e7de5b0c-level_one.scn
+res://Levels/level_two.tscn::6708494b29d51ed6d9e54fd4dae98b36::1739800371::res://.godot/exported/133200997/export-681e3190ddcbb727254cbbc82962afe5-level_two.scn
+res://ui_screens/end_screen.tscn::6e33dd1ba16d9f203db7a15b16c99c01::1739800819::res://.godot/exported/133200997/export-82f28b5d44f2da8bec0b62136916d6ba-end_screen.scn
+res://ui_screens/title_screen.tscn::9ab7aa01f30dbd61891d5f9681ff851f::1740994398::res://.godot/exported/133200997/export-a651f30699249e5e2423f4fbeac17149-title_screen.scn
+res://autoloads/music_player.tscn::ed43e25dd6cf2b620f8d3df18f26a592::1739954329::res://.godot/exported/133200997/export-1c43f952e67eae1703ba9ea61e654485-music_player.scn
+res://theme/main.tres::f1876c376d77168b7836922d7131ab6c::1740994275::res://.godot/exported/133200997/export-befe12de105a604fe43f0e324d0d7c2c-main.res

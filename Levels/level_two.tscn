@@ -1,0 +1,13 @@
+[gd_scene load_steps=5 format=3 uid="uid://qdkpf1kaj3ag"]
+
+[ext_resource type="PackedScene" uid="uid://5aohpy4q2odu" path="res://Levels/base_level.tscn" id="1_s1emf"]
+[ext_resource type="PackedScene" uid="uid://da6urw7qoqiey" path="res://bosses/boss_two.tscn" id="2_mei44"]
+[ext_resource type="PackedScene" uid="uid://cthvnosfu6lmo" path="res://ui_screens/end_screen.tscn" id="2_oqbf8"]
+[ext_resource type="AudioStream" uid="uid://rcwd3l5b8fvh" path="res://songs/future.ogg" id="3_w78ve"]
+
+[node name="LevelTwo" instance=ExtResource("1_s1emf")]
+next_level = ExtResource("2_oqbf8")
+song = ExtResource("3_w78ve")
+
+[node name="BossTwo" parent="." index="4" instance=ExtResource("2_mei44")]
+position = Vector2(937, 292)

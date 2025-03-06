@@ -1,0 +1,35 @@
+[gd_scene load_steps=5 format=3 uid="uid://c5mesiiphe7ex"]
+
+[ext_resource type="Script" path="res://bosses/boss_one.gd" id="1_i7314"]
+[ext_resource type="PackedScene" uid="uid://xmpwthpwxqwk" path="res://bosses/base_boss.tscn" id="1_lf3pn"]
+[ext_resource type="PackedScene" uid="uid://by0r1gmvtkfc2" path="res://bosses/enemy_shooter.tscn" id="2_vtwo8"]
+[ext_resource type="Script" path="res://bosses/draw_eye.gd" id="4_oxnj2"]
+
+[node name="BossOne" instance=ExtResource("1_lf3pn")]
+script = ExtResource("1_i7314")
+
+[node name="Sprite2" type="ColorRect" parent="." index="1"]
+offset_left = -128.0
+offset_top = -128.0
+offset_right = 128.0
+offset_bottom = 128.0
+rotation = 0.785398
+pivot_offset = Vector2(128, 128)
+
+[node name="Shooter" parent="Shooters" index="0" instance=ExtResource("2_vtwo8")]
+position = Vector2(-167, 0)
+rotation = 4.71239
+
+[node name="Shooter2" parent="Shooters" index="1" instance=ExtResource("2_vtwo8")]
+position = Vector2(164, 0)
+rotation = 1.5708
+
+[node name="Shooter3" parent="Shooters" index="2" instance=ExtResource("2_vtwo8")]
+position = Vector2(0, 164)
+rotation = 3.14159
+
+[node name="Shooter4" parent="Shooters" index="3" instance=ExtResource("2_vtwo8")]
+position = Vector2(0, -169)
+
+[node name="Eye" type="Node2D" parent="." index="6"]
+script = ExtResource("4_oxnj2")
