@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1740994270
+::res://::1741263259
 export_presets.cfg::TextFile::-1::1739634333::0::1::::<><>::
 icon.svg::CompressedTexture2D::2449380717444198255::1738783648::1738783662::1::::<><>::
 ::res://autoloads/::1739954899
@@ -27,9 +27,9 @@ dead_explosion.tscn::PackedScene::7364052355469747744::1739802762::0::1::::<><>:
 ::res://fonts/::1740994234
 ARCADECLASSIC.TTF::FontFile::5889808392402745032::1044729866::1739800586::1::::<><>::
 toxigenesis bd.otf::FontFile::970814512278416475::1497705852::1740994234::1::::<><>::
-::res://Levels/::1740994148
-base_level.tscn::PackedScene::2106528673862680618::1740994148::0::1::::<><>::res://Levels/level.gd<>uid://co1lrggmahd1n::::res://player/player.tscn<>uid://whkqhwjb3f4b::::res://sounds/explosion.wav
-level.gd::GDScript::-1::1739954986::0::1::::<>Node2D<>::
+::res://Levels/::1740994585
+base_level.tscn::PackedScene::2106528673862680618::1740994585::0::1::::<><>::res://Levels/level.gd<>uid://co1lrggmahd1n::::res://player/player.tscn<>uid://whkqhwjb3f4b::::res://sounds/explosion.wav
+level.gd::GDScript::-1::1740994585::0::1::::<>Node2D<>::
 level_one.tscn::PackedScene::4771338872740428174::1739800329::0::1::::<><>::uid://5aohpy4q2odu::::res://Levels/base_level.tscn<>uid://c5mesiiphe7ex::::res://bosses/boss_one.tscn<>uid://qdkpf1kaj3ag::::res://Levels/level_two.tscn<>uid://cr8w0yq5umm7p::::res://songs/glitch.ogg
 level_two.tscn::PackedScene::1129848891543341438::1739800371::0::1::::<><>::uid://5aohpy4q2odu::::res://Levels/base_level.tscn<>uid://da6urw7qoqiey::::res://bosses/boss_two.tscn<>uid://cthvnosfu6lmo::::res://ui_screens/end_screen.tscn<>uid://rcwd3l5b8fvh::::res://songs/future.ogg
 ::res://player/::1739800136
@@ -48,10 +48,10 @@ shoot.wav::AudioStreamWAV::8790624973478906557::1632765422::1738857754::1::::<><
 ::res://textures/::1739802751
 square-32.png::CompressedTexture2D::2345013762322106813::1739802561::1739802578::1::::<><>::
 square-64.png::CompressedTexture2D::7744645043346763316::1739802736::1739802751::1::::<><>::
-::res://theme/::1740993942
-main.tres::Theme::7110570312100970134::1740993942::0::1::::<><>::
-::res://ui_screens/::1739952996
+::res://theme/::1740994275
+main.tres::Theme::7110570312100970134::1740994275::0::1::::<><>::
+::res://ui_screens/::1740994671
 end_screen.gd::GDScript::-1::1739517201::0::1::::<>CanvasLayer<>::
 end_screen.tscn::PackedScene::6122179076344612138::1739800819::0::1::::<><>::res://ui_screens/end_screen.gd
-title_screen.gd::GDScript::-1::1739724119::0::1::::<>CanvasLayer<>::
-title_screen.tscn::PackedScene::3351070704311139302::1739952996::0::1::::<><>::res://ui_screens/title_screen.gd<>uid://c8kob3vhkjd1o::::res://theme/main.tres
+title_screen.gd::GDScript::-1::1740994671::0::1::::<>CanvasLayer<>::
+title_screen.tscn::PackedScene::3351070704311139302::1740994600::0::1::::<><>::res://ui_screens/title_screen.gd<>uid://c8kob3vhkjd1o::::res://theme/main.tres
